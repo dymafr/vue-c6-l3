@@ -14,6 +14,9 @@
       {{ `${index} : ${valeur} - ${cle}` }}
     </li>
   </ul>
+  <ul>
+    <li v-for="n in 4">Bonjour !</li>
+  </ul>
 </template>
 
 <script setup lang="ts">
