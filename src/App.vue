@@ -9,6 +9,11 @@
       <span v-for="note in notes">{{ note }} / </span>
     </li>
   </ul>
+  <ul>
+    <li v-for="(valeur, cle, index) of voiture">
+      {{ `${index} : ${valeur} - ${cle}` }}
+    </li>
+  </ul>
 </template>
 
 <script setup lang="ts">
@@ -20,6 +25,10 @@ const utilisateurs = reactive([
   { prenom: 'Paul', notes: [12, 10, 8] },
   { prenom: 'Pierre', notes: [3, 15, 18] },
 ]);
+const voiture = {
+  roues: 4,
+  prix: 4000,
+};
 </script>
 
 <style scoped lang="scss"></style>
